@@ -30,10 +30,20 @@ switch (opcion)
             fact= fact*= i;
         }
 cout<< "El resultado del factorial es:"<<fact<<endl;
+        break;
 
+    case 2:
+        cout << "Elejiste Tabla de multiplicar" << endl;
+        printf ("\n");
 
+do {
+    printf("Ingrese el numero del cual quiere visualizar su tabla de multiplicar");
+    cin >> nm;
+}while((nm<1) || (nm>10));
 
-
+for (int i=1; i<=10; i++){
+    cout<<nm<<"*"<<i<<"="<<nm*i<<endl;
+}
 
         break;
 
